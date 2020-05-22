@@ -1,0 +1,77 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.androidlab4"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+11-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml:4:5-77
+11-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml:4:22-74
+12
+13    <application
+13-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml:5:5-30:19
+14        android:allowBackup="true"
+14-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml:6:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.1.0] C:\Users\Pavel\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:18-86
+16        android:debuggable="true"
+17        android:icon="@mipmap/ic_launcher"
+17-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml:7:9-43
+18        android:label="@string/app_name"
+18-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml:8:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml:9:9-54
+20        android:supportsRtl="true"
+20-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml:10:9-35
+21        android:testOnly="true"
+22        android:theme="@style/AppTheme" >
+22-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml:11:9-40
+23        <activity android:name="com.example.androidlab4.MainActivity" >
+23-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml:12:9-18:20
+23-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml:12:19-47
+24            <intent-filter>
+24-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml:13:13-17:29
+25                <action android:name="android.intent.action.MAIN" />
+25-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml:14:17-69
+25-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml:14:25-66
+26
+27                <category android:name="android.intent.category.LAUNCHER" />
+27-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml:16:17-77
+27-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml:16:27-74
+28            </intent-filter>
+29        </activity>
+30
+31        <service android:name="com.example.androidlab4.InfoService" />
+31-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml:19:9-48
+31-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml:19:18-45
+32
+33        <receiver
+33-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml:20:9-29:20
+34            android:name="com.example.androidlab4.MyWidget"
+34-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml:20:19-43
+35            android:label="Widgget" >
+35-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml:21:13-36
+36            <intent-filter>
+36-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml:22:13-26:29
+37                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" >
+37-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml:23:17-25:26
+37-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml:24:21-77
+38                </action>
+39            </intent-filter>
+40
+41            <meta-data
+41-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml:27:13-28:69
+42                android:name="android.appwidget.provider"
+42-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml:27:24-65
+43                android:resource="@xml/widget_metadata" />
+43-->C:\Users\Pavel\Desktop\AndroidLab4\app\src\main\AndroidManifest.xml:28:17-56
+44        </receiver>
+45    </application>
+46
+47</manifest>
